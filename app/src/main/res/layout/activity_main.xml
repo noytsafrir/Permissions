@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/main_LBL_welcome_app"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="Permissions App"
+        android:textColor="@color/white"
+        android:textSize="45sp"/>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/main_IMG_login_image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/main_LBL_welcome_app"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        app:srcCompat="@drawable/ic_close_lock" />
+
+<!--    <com.airbnb.lottie.LottieAnimationView-->
+<!--        android:id="@+id/animation_view"-->
+<!--        android:layout_width="274dp"-->
+<!--        android:layout_height="284dp"-->
+<!--        android:layout_centerInParent="true"-->
+<!--        app:lottie_rawRes="@raw/animation_unlock"-->
+<!--        app:lottie_speed="1" />-->
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/main_BTN_grant_permissions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_centerInParent="true"
+        android:onClick="onClick" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="145dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/main_BTN_grant_permissions"
+        android:layout_centerHorizontal="true"
+        android:layout_weight="1">
+
+        <!-- /// V Layout-->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="14dp"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_V_location"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/ic_white_v" />
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="wrap_content" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_V_bluetooth"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/ic_white_v" />
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="wrap_content" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_IMG_V_battery"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/ic_white_v" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <!-- V Layout \\\ -->
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</RelativeLayout>
