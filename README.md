@@ -6,8 +6,8 @@
 2. Device Bluetooth is Turned On
 3. Device Battery percents are above 50%.
 
-# Contributor
+## Contributor
 
 Noy Tsafrir - 208013755
 
-# Video
+## Video
